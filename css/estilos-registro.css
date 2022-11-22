@@ -1,0 +1,44 @@
+.botones{
+	margin-left: 11.2px;
+}
+
+button{
+	margin: 10px;
+	width: 100px;
+}
+.encabezado{
+	padding: 20px;
+}
+.container{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.form-control{
+	border-radius: 20px;
+}
+.card-body{
+	border-radius: 20px;
+}
+
+/*PIE DE PAGINA--FOOTER*/
+footer{
+	background-color:#09080E;
+    font-family:'Raleway', sans-serif;
+    line-height:25px;
+	margin:0;
+    font-size: 16px;
+    padding-top: 5px;
+    padding: 0;
+}
+
+.footer-copyright {
+	background-color: #000000;
+}
+
+.obg{
+    border: 1px solid #28f154;
+}
+
+.pendiente{
+    border: 1px solid #ff1e1e;
+}

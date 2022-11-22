@@ -1,0 +1,55 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+/*Encabezado*/
+.navbar-brand{
+    letter-spacing: 7px;
+}
+
+.navbar-dark {       
+    background-color:#003857;
+    font-family:Helvetica;
+    font-size:20px;
+}
+div .dropdown-menu {
+    background: #3d708d;
+}
+div .dropdown-item{
+    color:#FFF;
+}
+div .dropdown-item:hover{
+    background-color: #02156b;
+    color:#FFF;
+}
+
+/*Botones de paginacion*/
+.nav-pills .btn{
+    border-radius: 0px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+h2{
+    text-align: center;
+    color: #3d708d;
+    margin-top: 12.8px;
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+th{
+    font-size:22px;
+    font-weight: lighter;
+    line-height:25px;
+    text-align: justify;
+}
+
+/*PIE DE PAGINA--FOOTER*/
+footer{
+    width:100%; 
+    position:absolute; 
+    bottom:0; 
+    left:0; 
+}

@@ -1,0 +1,151 @@
+.navbar{
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    min-height: 8vh;
+    color: white;
+    font-family: 'Raleway';
+    background-color: #003857;
+    font-size: 20px;
+  }
+
+
+.navbar-brand{
+    letter-spacing: 2px;
+}
+
+div .dropdown-menu {
+    background: #3d708d;
+}
+div .dropdown-item{
+    color:#FFF;
+}
+div .dropdown-item:hover{
+    background-color: #02156b;
+    color:#FFF;
+}
+
+
+.trans {
+    opacity: 0.6;
+}
+
+.h4, h4 {
+    margin:15px;
+}
+
+.p, p{
+    margin:15px;
+    font-size: large;
+
+}
+
+/*carousel*/
+.carousel-caption{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+  
+#h1first {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: xx-large;
+}
+
+.carousel-caption h1 {
+    font-size:8vw;
+}
+.carousel-caption .btn {
+    border-radius: 100px;
+    font-size:2vw;
+    letter-spacing: 5px;
+    background-color: #02679d;
+}
+.carousel-caption .btn:hover {
+    background-color: #00324d;
+}
+/*carousel*/
+
+body {
+    background: lightgray;
+    font-size: 20px;
+    line-height: 25px;
+    margin:0;
+    font-family:'Raleway', sans-serif;
+}
+
+
+.main .container{
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom:2.5%;
+    padding: 10px;
+}
+
+.card{
+    margin-top: 20px;;
+    padding: 20px;
+}
+
+.card-body .btn{
+    border-radius: 40px;
+    display: block;
+}
+
+/* Contact Section*/
+.contacto {
+    margin: 0;
+    padding: 0;
+  }
+  #contact .card {
+    margin: 20px;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 5px;  
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0px 0px 12px 0 #152f4387;
+    transition: .3s ease box-shadow;
+  }
+  #contact .card:hover{
+    box-shadow: 0px 0px 8px 0 #1b293387;
+  }
+  #contact h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+  }
+  #contact h4 {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Raleway', sans-serif;
+  }
+  /* End Contact Section*/
+
+
+/*PIE DE PAGINA--FOOTER*/
+footer{
+	background-color:#09080E;
+    font-family:'Raleway', sans-serif;
+    line-height:25px;
+    font-size: 16px;
+    padding: 5px 0 0;
+    margin:0;
+}
+
+.footer-copyright {
+	background-color: #000000;
+}
