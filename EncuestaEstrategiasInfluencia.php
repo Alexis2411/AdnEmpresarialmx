@@ -27,15 +27,21 @@ include "includes/function/session.php";
         <div class="col-md-6">
             <div class="jumbotron bg-ligth">
                 <div class="container barra">
-                    <h1 class="text-center"><strong>Índice del Proceso Administrativo</strong></h1>
+                    <h1 class="text-center"><strong>Uso de estrategias de influencia</strong></h1>
                     <p class="text-justify">
-                    <h3><strong>Objetivo:</strong></h3>
+                    <h3><strong>Descripción:</strong></h3>
                     <ol>
                         <li>
-                            Conocer el grado de aplicación que tienen las etapas del proceso administrativo dentro de la empresa.
+                        Anote el número adecuado en el espacio disponible para indicar con qué frecuencia utiliza cada una de las siguientes estrategias cuando quiere lograr que los demás cumplan los deseos de usted.
                         </li>
                         <li>
-                            Los datos recolectados servirán para la elaboración de un índice que mida la practicidad del proceso administrativo a cualquier tipo de organización.
+                        Sea honesto.
+                        </li>
+                        <li>
+                        Este instrumento está diseñado para ayudarle a descubrir su nivel de competencia en la comunicación de apoyo, con la finalidad de que pueda adaptar su aprendizaje a sus necesidades específicas.
+                        </li>
+                        <li>
+                        Cuando haya respondido el cuestionario, utilice la clave de resultados al final del capítulo, para identificar aquellas áreas de habilidad que se estudian en este capítulo y que usted necesita aprender a dominar
                         </li>
                     </ol>
 
@@ -75,7 +81,7 @@ include "includes/function/session.php";
                     <?php
                     include "includes/function/funciones.php";
                     if (isset($_SESSION['usuario'])) {
-                        $seccion = obtSeccion(1, 4);
+                        $seccion = obtSeccion(25, 25);
                         if ($seccion) {
                             foreach ($seccion as $row) {
                                 ?>
@@ -83,7 +89,7 @@ include "includes/function/session.php";
                                     <img class="card-img-top image-responsive" src="<?php echo $row["imagen"] ?>" alt="Card image cap" max-width="100%" width="80%">
                                     <div class="card-body">
                                         <h5 class="text-center font-weight-bold" style="font-size: 1rem; width: fit-content">
-                                            <?php echo romano($row["id_seccion"]) . "." . $row["nombre"]; ?>
+                                            <?php echo $row["nombre"]; ?>
                                         </h5>
                                         <?php
                                         if ($row["completo"] == 1) {

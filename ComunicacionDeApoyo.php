@@ -20,12 +20,6 @@ include "includes/function/session.php";
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid text-center">
-                <h1>Indicador de gestión del proceso administrativo</h1>
-            </div><!-- /.container-fluid -->
-        </section>
 
         <!--S Main content -->
         <!-- Main content -->
@@ -39,42 +33,48 @@ include "includes/function/session.php";
                             <div class="col-md-6">
                                 <div class="jumbotron bg-ligth">
                                     <div class="container barra">
-                                        <h1 class="text-center"><strong>Índice del Proceso Administrativo</strong></h1>
-                                        <p class="text-justify">
-                                        <h3><strong>Objetivo:</strong></h3>
-                                        <ol>
-                                            <li>
-                                                Conocer el grado de aplicación que tienen las etapas del proceso administrativo dentro de la empresa.
-                                            </li>
-                                            <li>
-                                                Los datos recolectados servirán para la elaboración de un índice que mida la practicidad del proceso administrativo a cualquier tipo de organización.
-                                            </li>
-                                        </ol>
+                                    <h1 class="text-center"><strong>Diagnóstico para la comunicación de apoyo</strong></h1>
+                    <p class="text-justify">
+                    <h3><strong>Descripción:</strong></h3>
+                    <ol>
+                        <li>
+                        Las respuestas deben reflejar sus actitudes y comportamiento como son ahora, no como usted quisiera que fueran.
+                        </li>
+                        <li>
+                        Sea honesto.
+                        </li>
+                        <li>
+                        Este instrumento está diseñado para ayudarle a descubrir su nivel de competencia en la comunicación de apoyo, con la finalidad de que pueda adaptar su aprendizaje a sus necesidades específicas.
+                        </li>
+                        <li>
+                        Cuando haya respondido el cuestionario, utilice la clave de resultados al final del capítulo, para identificar aquellas áreas de habilidad que se estudian en este capítulo y que usted necesita aprender a dominar
+                        </li>
+                    </ol>
 
-                                        <h3><strong>Instrucciones:</strong></h3>
-                                        <ul>
-                                            <li>
-                                                Todas las preguntas tienen cinco opciones de respuesta, elija la que mejor describa lo que piensa sobre los elementos del proceso administrativo, tomando en cuenta lo siguiente:
-                                            </li>
-                                            <br>
-                                            <ol>
-                                                <li> Totalmente en desacuerdo </li>
-                                                <li> En desacuerdo </li>
-                                                <li> Ni de acuerdo ni en desacuerdo </li>
-                                                <li> De acuerdo </li>
-                                                <li> Totalmente de acuerdo </li>
-                                            </ol>
-                                            <br>
-                                            <li>
-                                                No existen respuestas correctas o incorrectas y <strong>solamente puede elegir una opción.</strong>
-                                            </li>
-                                        </ul>
-                                        </p>
-                                        <p class="nota text-center" style="font-style: oblique;">
-                                            Sus respuestas serán anónimas y absolutamente confidenciales.
-                                            Los cuestionarios serán procesados automáticamente. <br>
-                                            De antemano muchas gracias por su colaboración.
-                                        </p>
+                    <h3><strong>Instrucciones:</strong></h3>
+                    <ul>
+                        <li>
+                            Todas las preguntas tienen cinco opciones de respuesta, elija la que mejor describa lo que piensa sobre los elementos del proceso administrativo, tomando en cuenta lo siguiente:
+                        </li>
+                        <br>
+                        <ol>
+                            <li> Totalmente en desacuerdo </li>
+                            <li> En desacuerdo </li>
+                            <li> Ni de acuerdo ni en desacuerdo </li>
+                            <li> De acuerdo </li>
+                            <li> Totalmente de acuerdo </li>
+                        </ol>
+                        <br>
+                        <li>
+                            No existen respuestas correctas o incorrectas y <strong>solamente puede elegir una opción.</strong>
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="nota text-center" style="font-style: oblique;">
+                        Sus respuestas serán anónimas y absolutamente confidenciales.
+                        Los cuestionarios serán procesados automáticamente. <br>
+                        De antemano muchas gracias por su colaboración.
+                    </p>
                                     </div>
                                 </div>
                                 <!-- Contenido destabado -->
@@ -87,7 +87,7 @@ include "includes/function/session.php";
                                         <?php
                                         include "includes/function/funciones.php";
                                         if (isset($_SESSION['usuario'])) {
-                                            $seccion = obtSeccion(1, 4);
+                                            $seccion = obtSeccion(5, 7);
                                             if ($seccion) {
                                                 foreach ($seccion as $row) {
                                                     ?>
@@ -96,7 +96,7 @@ include "includes/function/session.php";
                                                         <img class="card-img-top image-responsive" src="<?php echo $row["imagen"] ?>" alt="Card image cap" max-width="100%" width="80%">
                                                         <div class="card-body">
                                                             <h5 class="text-center font-weight-bold" style="font-size: 1rem; width: fit-content">
-                                                                <?php echo romano($row["id_seccion"]) . "." . $row["nombre"]; ?>
+                                                                <?php echo $row["nombre"]; ?>
                                                             </h5>
                                                             <?php
                                                             if ($row["completo"] == 1) {

@@ -9,8 +9,7 @@
 */
 class database{
 	//DEV
-	/*
-	private $host='localhost:9006';//generalmente suele ser "127.0.0.1"
+	/*private $host='localhost';//generalmente suele ser "127.0.0.1"
 	private $user='root';//Usuario de tu base de datos
 	private $pass='12334';//Contraseña del usuario de la base de datos
 	private $db='encuestauv';//Nombre de la base de datos
@@ -23,7 +22,7 @@ class database{
 	private $host='localhost';//generalmente suele ser "127.0.0.1"
 	private $user='adnempre_admin';//Usuario de tu base de datos
 	private $pass='Uv2020@#$';//Contraseña del usuario de la base de datos
-	private $db='adnempre_encuesta';//Nombre de la base de datos
+	private $db='encuestauv';//Nombre de la base de datos
 	public $counter;//Propiedad para almacenar el numero de registro devueltos por la consulta
 
 	public  function conectar(){

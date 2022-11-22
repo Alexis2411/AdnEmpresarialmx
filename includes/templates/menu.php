@@ -13,7 +13,7 @@ if (!isset($_SESSION["usuario"]) &&$_SERVER["PHP_SELF"] =="/pagina-web-2020/Inic
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Registro.php">Registrarse<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Registro.php"><span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

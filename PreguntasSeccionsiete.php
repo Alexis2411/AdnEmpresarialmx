@@ -12,6 +12,7 @@ date_default_timezone_set('America/Mexico_City');
         $ids = $ide['id_seccion'];
         $nombre = $ide['nombre'];
         $tPreguntas = $ide['total'];
+       // $romano = romano($ide['id_seccion']);
         $completo = $ide['completo'];
       }
       if ($completo == 1) {
@@ -32,7 +33,7 @@ date_default_timezone_set('America/Mexico_City');
 <head>
   <?php
   include("includes/templates/head.php");
-  $titulo ="Sección $nombre";
+  $titulo ="Sección  $nombre";
   tittle($titulo);
   ?>
   <link rel="stylesheet" href="css/estilos_preguntas.css">
@@ -154,6 +155,8 @@ date_default_timezone_set('America/Mexico_City');
                                   <th scope="col" class="font-weight-bold">3</th>
                                   <th scope="col" class="font-weight-bold">4</th>
                                   <th scope="col" class="font-weight-bold">5</th>
+                                  <th scope="col" class="font-weight-bold">6</th>
+                                  <th scope="col" class="font-weight-bold">7</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -165,7 +168,7 @@ date_default_timezone_set('America/Mexico_City');
                                     <tr class="res-radio">
                                       <th scope="row"> <?php echo $sub["numero_subpregunta"] ?>.- <?php echo $sub["subpregunta"] ?> </th>
                                       <?php 
-                                        for ($r=1; $r < 6; $r++) { 
+                                        for ($r=1; $r < 8; $r++) { 
                                           if ($sub["posicion"] != $r) {
                                             ?>
                                             <td><input type="radio" name="sub<?php echo $sub["id_subpregunta"] ?>" id="p:<?php echo $idu ?>:<?php echo $sub["id_subpregunta"] ?>:<?php echo $r ?>:<?php echo $id ?>" class="option" ></td>
