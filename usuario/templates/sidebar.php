@@ -24,21 +24,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="MenuEncuestas.php" class="nav-link">
                         <i class="nav-icon fas fa-pencil-ruler"></i>
                         <p>
                             Encuestas
 
                         </p>
                     </a>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="ProcesosAdministrativos.php" class="nav-link">
-                                <i class="nav-icon far fa-check-circle text-info"></i>
-                                <p>Procesos Administrativos</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
 
                 <li class="nav-item">
@@ -54,6 +46,14 @@
                             <a href="UsuarioResultado1.php" class="nav-link">
                                 <i class="nav-icon far fa-check-circle text-info"></i>
                                 <p>Procesos Administrativos</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoApoyo.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Diagnóstico para la comunicación de apoyo</p>
                             </a>
                         </li>
                     </ul>

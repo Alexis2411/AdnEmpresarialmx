@@ -37,6 +37,111 @@ include "includes/function/session.php";
                                     <a href="Encuesta1.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
                                 </td>
                             </tr>
+                            <tr>
+                                
+                            </tr>
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Diagnóstico de la Comunicación de Apoyo</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaApoyo.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+
+                            </tr>
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Evaluación del Manejo del Estrés</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaEstres.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            </tr>
+
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Solución Creativa de Problemas</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaSolAnaCrea.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            </tr>
+
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Ganar Poder e Influencia</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaPoderInlfuencia.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            </tr>
+                            
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Uso de estrategias de influencia</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaEstrategiasInfluencia.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Diagnóstico para Motivar a los Demás</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaMotivación.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Manejo de Conflictos Interpersonales</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaConInt.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Facultamiento y Delegación Eficaces</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaFaDele.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Facultamiento Personal</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaFaPe.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Desarrollo de Equipos</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaCompDesaE.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Necesidad de Formación de Equipos</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaNeFoE.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+                            <td class="col-7">
+                                    <h3 class="card-title text-justify">Liderar el cambio positivo</h3>
+                                </td>
+                                <td class="col-5">
+                                    <a href="EncuestaDirCamPos.php" class="btn btn-pill text-white" style="background-color:#3D708D;"> COMENZAR</a>
+                                </td>
+                            </tr>
+
+
+
                         </tbody>
                     </table>
                 </div>
@@ -44,11 +149,6 @@ include "includes/function/session.php";
         </div>
     </div>
     
-    <footer class="page-footer font-small fixed-bottom" style="background-color:#09080E; padding:5px 0 0;">
-        <div class="footer-copyright text-center py-3" style="background-color:#000000;">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-        </div>
-    </footer>
     <!-- Footer -->
 </body>
 

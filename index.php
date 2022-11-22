@@ -22,7 +22,7 @@ session_start();
     <!--</menu>-->
     <main class="main">
 
-        <!--
+        
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -35,7 +35,7 @@ session_start();
                 </div>
             </div>
         </div>
--->
+
         <div class="container bg-light">
 
             <div class="row" >

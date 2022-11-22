@@ -82,12 +82,28 @@ function activarPregunta($opcion)
     }
 }
 
-function obtSeccion()
+function obtSeccion($IdMin, $IdMax)
 {
     include 'conexion.php';
-    session_start();
-    try {
-        return $con->query("SELECT id_seccion, nombre, imagen,(SELECT completo FROM `estado-seccion` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion=seccion.id_seccion)AS completo FROM seccion");
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }try {
+        return $con->query("SELECT id_seccion, nombre, imagen,(SELECT completo FROM `estado-seccion` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion=seccion.id_seccion)AS completo FROM seccion WHERE id_seccion >= {$IdMin} AND id_seccion <= {$IdMax}");
+    } catch (Exception $e) {
+        echo "Error!!" . $e->getMessage() . "<br>";
+        return false;
+    }
+}
+
+function NuevaObtSeccion($Ids)
+{
+    include 'conexion.php';
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }try {
+        return $con->query("SELECT id_seccion, nombre, imagen,(SELECT completo FROM `estado-seccion` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion=seccion.id_seccion)AS completo FROM seccion WHERE id_seccion == {$Ids}");
     } catch (Exception $e) {
         echo "Error!!" . $e->getMessage() . "<br>";
         return false;
@@ -108,7 +124,10 @@ function obtSeccionExport($usuario)
 function scoreSeccion($id)
 {
     include 'conexion.php';
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
     try {
         return $con->query("SELECT (IFNULL((SELECT SUM(valor) FROM `respuesta-preguntas` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion = seccion.id_seccion),0)+(SELECT SUM(valor) FROM `respuesta-sub` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion = seccion.id_seccion))AS total, valor  FROM `seccion` WHERE id_seccion = {$id}");
     } catch (Exception $e) {
@@ -125,6 +144,7 @@ function romano($numero)
         "2" => 'II',
         "3" => 'III',
         "4" => 'IV',
+        "5" => 'V',
     );
     return $romano[$numero];
 }
@@ -134,7 +154,10 @@ function mosSeccion($id)
 {
     include 'conexion.php';
     $nombre = filter_var($id, FILTER_SANITIZE_STRING);
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
     try {
         return $con->query("SELECT id_seccion, nombre, (SELECT COUNT(id_pregunta) FROM preguntas WHERE id_seccion=seccion.id_seccion )AS total, (SELECT completo FROM `estado-seccion` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion=seccion.id_seccion)AS completo  FROM seccion WHERE nombre='$nombre'");
     } catch (Exception $e) {
@@ -168,7 +191,10 @@ function resultado()
 {
     include 'conexion.php';
 
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
     try {
         return $con->query("SELECT (IFNULL((SELECT SUM(valor) FROM `respuesta-preguntas` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion = seccion.id_seccion),0)+(SELECT SUM(valor) FROM `respuesta-sub` WHERE id_usuario = {$_SESSION["usuario"]} AND id_seccion = seccion.id_seccion))AS total, valor  FROM `seccion` WHERE id_seccion = {$id}");
     } catch (Exception $e) {
