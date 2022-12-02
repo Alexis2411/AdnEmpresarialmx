@@ -51,9 +51,89 @@
                     </ul>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="UsuarioResultadoApoyo.php" class="nav-link">
+                            <a href="UsuarioResultadoDCA.php" class="nav-link">
                                 <i class="nav-icon far fa-check-circle text-info"></i>
                                 <p>Diagnóstico para la comunicación de apoyo</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoEME.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Evaluación del Manejo del Estrés</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoSCP.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Solucion Creativa de Problemas</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoGPI.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Ganar Poder e Influencia</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoEMD.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Uso de Estrategias para Motivar a los Demás</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoMCI.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Manejo de Conflictos Interpersonales</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoFDE.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Facultamiento y Delegación Eficaces</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoFPE.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Facultamiento Personal</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoDEQ.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Desarrollo de Equipos</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoNFE.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Necesidad de Formación de Equipos</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="UsuarioResultadoLCP.php" class="nav-link">
+                                <i class="nav-icon far fa-check-circle text-info"></i>
+                                <p>Liderar el cambio positivo</p>
                             </a>
                         </li>
                     </ul>

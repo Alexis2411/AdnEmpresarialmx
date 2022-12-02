@@ -22,20 +22,6 @@ session_start();
     <!--</menu>-->
     <main class="main">
 
-        
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img href="MenuEncuestas.php" src="img/fondo.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption" id="h1first">
-                        <h1 class="h1-responsive">ENCUESTA PARA EMPRESAS</h1>
-                        <hr class="my-2">
-                        <a href="MenuEncuestas.php" class="btn btn-lg text-white font-weight-bold">REGISTRATE</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container bg-light">
 
             <div class="row" >

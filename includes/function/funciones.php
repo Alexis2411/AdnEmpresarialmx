@@ -114,7 +114,7 @@ function obtSeccionExport($usuario)
 {
     include 'conexion.php';
     try {
-        return $con->query("SELECT id_seccion, (SELECT completo FROM `estado-seccion` WHERE id_usuario = {$usuario} AND id_seccion=seccion.id_seccion)AS completo FROM seccion");
+        return $con->query("SELECT id_seccion, nombre, (SELECT completo FROM `estado-seccion` WHERE id_usuario = {$usuario} AND id_seccion=seccion.id_seccion)AS completo FROM seccion");
     } catch (Exception $e) {
         echo "Error!!" . $e->getMessage() . "<br>";
         return false;
@@ -267,6 +267,19 @@ function bloqueScore($usuario, $pregunta)
     try {
         return $con->query("SELECT SUM(valor)AS valor,
     (SELECT  IFNULL((valor),0) FROM `respuesta-preguntas` WHERE id_usuario = {$usuario} AND id_pregunta = {$pregunta}) AS pregunta
+    FROM `respuesta-sub` WHERE  id_usuario = {$usuario} AND id_pregunta = {$pregunta}");
+    } catch (Exception $e) {
+        echo "Error!!" . $e->getMessage() . "<br>";
+        return false;
+    }
+}
+
+function subScore($usuario, $pregunta)
+{
+    include 'conexion.php';
+    try {
+        return $con->query("SELECT SUM(valor)AS valor,
+    (SELECT  IFNULL((valor),0) FROM `respuesta-subpreguntas` WHERE id_usuario = {$usuario} AND id_pregunta = {$pregunta}) AS pregunta
     FROM `respuesta-sub` WHERE  id_usuario = {$usuario} AND id_pregunta = {$pregunta}");
     } catch (Exception $e) {
         echo "Error!!" . $e->getMessage() . "<br>";

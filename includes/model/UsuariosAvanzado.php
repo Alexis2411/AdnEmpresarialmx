@@ -75,7 +75,7 @@ if($action == 'ajax'){
 
 
 											?>
-												<th>Seccion <?php echo romano($sec["id_seccion"]) ?></th>
+												<th>Encuesta <?php echo ($sec['nombre']) ?></th>
 											<?php
 										}
 									}
@@ -136,11 +136,17 @@ if($action == 'ajax'){
 
 
 						$complete = scoreExport($score["id_seccion"], $usuario);
-                    	foreach($complete as $comp){
+						foreach($complete as $comp){
 							if ($comp["total"] != null) {
-								?>
-                                <td><?php echo $comp["total"];?></td>
+								if ($score["id_seccion"] <= 4){
+									?>
+									<td><?php echo $comp["total"];?></td>
                                 <?php
+								}else{
+									?>
+									<td><?php echo $comp["total"]/2 ;?></td>
+									<?php
+								}
 							}else {
 								?>
                                 <td> Pendiente </td>
